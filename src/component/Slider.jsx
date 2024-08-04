@@ -1,25 +1,23 @@
 import { ArrowLeftOutlined, ArrowRightOutlined } from "@mui/icons-material";
 import { useState } from "react";
+import styled from "styled-components";
 
 const Slider = () => {
 
-    const [slideIndex, setSlideIndex] = useState(0)
-    const handleClick = (direction) => {
+    // const wraper = styled.div`
+    //     height : 100%;
+    //     display : flex;
+    //     transition : all 1.5s e;
+    //     transform : translateX(${(props)=>props.slideIndex * -100}vW)
+    // `;
 
-        if(direction === 'left'){
-            setSlideIndex( slideIndex > 0 ? slideIndex-1 : 2)
-        }
-        if(direction === 'right'){
-            setSlideIndex( slideIndex < 2 ? slideIndex+1 : 0)
-        }
-    };
 
     return (
-        <div className="w-[100%] h-[100vh] flex relative truncate mt-10">
-            <div onClick={()=>handleClick('left')} className="cursor-pointer w-[50px] h-[50px] bg-purple-100 rounded-full flex justify-center items-center absolute top-0 bottom-0 m-auto left-5">
+        <div className="w-[97%] h-[100vh] flex relative truncate m-10">
+            <div className="cursor-pointer w-[50px] h-[50px] bg-purple-100 rounded-full flex justify-center items-center absolute top-0 bottom-0 m-auto left-5">
                 <ArrowLeftOutlined />
             </div>
-            <div className="h-[100%] flex" style={{transform:'translateX(${slideIndex} * -100vw)'}}>
+            <div className="h-[100%] flex">
                 <div className="flex items-center w-[100vw] h-[100vh]">
                     <div className="flex-1 h-[100%]">
                         <img className='h-[80%]' src="https://assistanteplus.fr/wp-content/uploads/2022/04/chat-midjourney.webp" alt="" />
@@ -41,7 +39,7 @@ const Slider = () => {
                     </div>
                 </div>
             </div>
-            <div onClick={()=>handleClick('right')} className="cursor-pointer w-[50px] h-[50px] bg-purple-100 rounded-full flex justify-center items-center absolute top-0 bottom-0 m-auto right-5">
+            <div  className="cursor-pointer w-[50px] h-[50px] bg-purple-100 rounded-full flex justify-center items-center absolute top-0 bottom-0 m-auto right-5">
                 <ArrowRightOutlined />
             </div>
         </div>

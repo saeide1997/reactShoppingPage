@@ -8,7 +8,7 @@ const Navbar = () => {
         <div className='h-[60px]'>
             <div className='p-7 flex justify-between items-center'>
                 <div className='flex-1 flex'>
-                    <div className='cursor-pointer ml-10 text-[14px]'>
+                    <div className='cursor-pointer justify-center items-center ml-10 text-[14px]'>
                         فارسی
                     </div>
                     <div className=' border-2 border-solid border-gray-400 ml-3 p-1'>
