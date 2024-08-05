@@ -4,6 +4,7 @@ import Slider from "../component/Slider";
 import Categories from "../component/Categories";
 import Products from "../component/Products";
 import News from "../component/News";
+import Footer from "../component/Footer";
 
 const HomePage = () =>{
     return (
@@ -13,7 +14,7 @@ const HomePage = () =>{
             <Categories/>
             <Products/>
             <News/>
-            {/* <Menu/> */}
+            <Footer/>
         </div>
     )
 }
