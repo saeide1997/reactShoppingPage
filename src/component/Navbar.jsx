@@ -5,7 +5,7 @@ import { Badge } from '@mui/material';
 
 const Navbar = () => {
     return (
-        <div className='h-[60px]'>
+        <div className='h-[80px] bg-slate-200'>
             <div className='p-7 flex justify-between items-center'>
                 <div className='flex-1 flex'>
                     <div className='cursor-pointer justify-center items-center ml-10 text-[14px]'>
@@ -13,7 +13,7 @@ const Navbar = () => {
                     </div>
                     <div className=' border-1 h-[25px] border-solid justify-center items-center border-gray-400 ml-3  p-0'>
                         <Search/>
-                        <input className='border-none h-[20px] relative top-[-3px]' type="text" />
+                        <input className='border-none h-[20px] relative top-[-3px] bg-slate-200' type="text" />
                     </div>
                 </div>
                 <div className='flex-1 text-center'>.SOHO</div>

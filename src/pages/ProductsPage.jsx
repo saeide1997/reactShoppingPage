@@ -12,15 +12,15 @@ const Product = () => {
             <div className="flex justify-between mx-4">
                 <div className="flex justify-center" >
                     <h5>فیلتر محصولات:</h5>
-                    <select className="mx-2 h-[30px] px-2 border-solid border-1 border-gray-700">
-                        <option value="" disabled selected></option>
+                    <select className="mx-2 h-[30px] px-2 border-solid border-1 bg-white border-gray-700">
+                        <option value="" disabled selected>نوع</option>
                         <option value="">مجلسی</option>
                         <option value="">راحتی</option>
                         <option value="">ست</option>
                         <option value="">لباس زیر</option>
                         <option value="">لباس خواب</option>
                     </select>
-                    <select className="mx-2 h-[30px] px-2 border-solid border-1 border-gray-700">
+                    <select className="mx-2 h-[30px] px-2 border-solid border-1 bg-white border-gray-700">
                         <option value="" disabled selected>سایز</option>
                         <option value="">small</option>
                         <option value="">medium</option>
@@ -31,7 +31,7 @@ const Product = () => {
                 </div>
                 <div className="flex">
                     <h5>ترتیب محصولات:</h5>
-                    <select  className="mx-2 h-[30px] px-2 border-solid border-1 border-gray-700" name="" id="">
+                    <select  className="mx-2 h-[30px] px-2 border-solid border-1 bg-white border-gray-700" name="" id="">
                         <option value="">تازه ترین</option>
                         <option value="">ارزان ترین</option>
                         <option value="">گران ترین</option>
