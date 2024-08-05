@@ -3,6 +3,8 @@ import Carousel from 'react-bootstrap/Carousel';
 // import ExampleCarouselImage from 'components/ExampleCarouselImage';
 import { useState } from "react";
 import styled from "styled-components";
+import img1 from '../assets/images/cat1.png'
+import img2 from '../assets/images/cat2.png'
 
 
 const Slider = () => {
@@ -17,22 +19,22 @@ const Slider = () => {
 
     return (
         <div className=" ">
-        <Carousel>
-            <Carousel.Item className="h-[100vh] w-[100%]">
+        <Carousel data-bs-theme="dark" className="h-[80vh] w-[100%] bg-slate-100">
+            <Carousel.Item >
                 <img
-                    className="w-100 h-100"
-                    src="../assets/images/cat1.png"
+                    className="h-[80vh]"
+                    src={img1}
                     alt="First slide"
                 />
-                <Carousel.Caption>
+                <Carousel.Caption className="">
                     <h5>First slide label</h5>
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                 </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item className="h-[100vh] w-[100%]">
+            <Carousel.Item >
                 <img
-                    className="w-100 h-100"
-                    src="../assets/images/cat2.png"
+                    className="h-[80vh]"
+                    src={img2}
                     alt="Second slide"
                 />
                 <Carousel.Caption>

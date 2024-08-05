@@ -7,9 +7,9 @@ const News = () => {
             <h1 className='text-[70px] mb-5'>تازه ها</h1>
             <div className='text-[24px] mb-5'>تازه ترین اخبارها را از محصول محبوب خود دریافت کنید.</div>
             <div className='w-[50%] h-[40px] bg-white flex justify-between border-1 border-solid border-gray-700'>
-                <input style={{flex:"8"}} type="text" placeholder='ایمبل خود را وارد کنید...'/>
+                <input className=' pr-2' style={{flex:"8"}} type="text" placeholder='ایمیل خود را وارد کنید...'/>
                 <button className=' bg-violet-500/50' style={{flex:"1"}} >
-                    <Send/>
+                    <Send className='rotate-180'/>
                 </button>
             </div>
             
