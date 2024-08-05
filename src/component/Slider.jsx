@@ -19,30 +19,41 @@ const Slider = () => {
 
     return (
         <div className=" ">
-        <Carousel data-bs-theme="dark" className="h-[80vh] w-[100%] bg-slate-100">
-            <Carousel.Item >
-                <img
-                    className="h-[80vh]"
-                    src={img1}
-                    alt="First slide"
-                />
-                <Carousel.Caption className="">
-                    <h5>First slide label</h5>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item >
-                <img
-                    className="h-[80vh]"
-                    src={img2}
-                    alt="Second slide"
-                />
-                <Carousel.Caption>
-                    <h5>Second slide label</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </Carousel.Caption>
-            </Carousel.Item>
-        </Carousel>
+            <Carousel data-bs-theme="dark" className="h-[80vh] w-[100%] bg-slate-100">
+                <Carousel.Item className="">
+                    <div className=" flex">
+                        <div lassName="flex-1 relative">
+                            <div className="z-0 w-[20%] h-[50%] rounded-full m-10 bg-red-500 absolute"></div>
+                            <div className=" relative" >
+                                <img className=" h-[80vh] "  src={img1} alt="First slide"/>
+                             </div>
+                            
+                        </div>
+                        <div className="flex-1 mt-16 p-5">
+                            <h3 className="mb-5">تخفیفات تابستانه</h3>
+                            <p>تخفیفات تابستانه را از دست ندهید...</p>
+                            <button className="border-1 p-2 border-gray-600 mt-5">مشاهده کنید</button>
+                        </div>
+                    </div>
+                </Carousel.Item>
+                <Carousel.Item >
+                    <div className=" flex">
+                        <div className=" flex-1">
+                        <div lassName="flex-1 relative">
+                            <div className="z-0 w-[20%] h-[50%] rounded-full m-10 bg-red-500 absolute"></div>
+                            <div className=" relative" >
+                                <img className=" h-[80vh] "  src={img2} alt="First slide"/>
+                            </div>
+                        </div>
+                        </div>
+                        <div className="flex-1 mt-16 p-5">
+                            <h3 className="mb-5">تخفیفات آخر فصل</h3>
+                            <p>تخفیفات آخر فصل را از دست ندهید...</p>
+                            <button className="border-1 p-2 border-gray-600 mt-5">مشاهده کنید</button>
+                        </div>
+                    </div>
+                </Carousel.Item>
+            </Carousel>
         </div>
     );
 };
