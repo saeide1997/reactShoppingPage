@@ -5,6 +5,8 @@ import ContactPage from "./pages/ContactPage";
 import AboutPage from "./pages/AboutPage";
 import NotFound from "./pages/NotFound";
 import "./index.css"
+import ProductsPage from "./pages/ProductsPage";
+import ProductPage from "./pages/ProductPage";
 
 const App = () => {
     return (
@@ -12,6 +14,8 @@ const App = () => {
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<HomePage />} />
+                    <Route path="/products" element={<ProductsPage />} />
+                    <Route path="/product" element={<ProductPage />} />
                     <Route path="/contact" element={<ContactPage />} />
                     <Route path="/about" element={<AboutPage />} />
                     <Route path="*" element={<NotFound />} /> 

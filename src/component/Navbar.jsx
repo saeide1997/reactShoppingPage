@@ -11,9 +11,9 @@ const Navbar = () => {
                     <div className='cursor-pointer justify-center items-center ml-10 text-[14px]'>
                         فارسی
                     </div>
-                    <div className=' border-2 border-solid border-gray-400 ml-3 p-1'>
+                    <div className=' border-1 h-[25px] border-solid justify-center items-center border-gray-400 ml-3  p-0'>
                         <Search/>
-                        <input className='border-none' type="text" />
+                        <input className='border-none h-[20px] relative top-[-3px]' type="text" />
                     </div>
                 </div>
                 <div className='flex-1 text-center'>.SOHO</div>

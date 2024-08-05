@@ -11,11 +11,11 @@ const Footer = () => {
                     <div className='ml-5 cursor-pointer w-[40px] h-[40px] text-white bg-blue-700 flex items-center justify-center rounded-full'>
                         <Facebook />
                     </div>
-                    <div className='ml-5 cursor-pointer w-[40px] h-[40px] text-white bg-blue-500 flex items-center justify-center rounded-full'>
-                        <Twitter />
-                    </div>
                     <div className='ml-5 cursor-pointer w-[40px] h-[40px] text-white bg-pink-500 flex items-center justify-center rounded-full'>
                         <Instagram />
+                    </div>
+                    <div className='ml-5 cursor-pointer w-[40px] h-[40px] text-white bg-blue-500 flex items-center justify-center rounded-full'>
+                        <Twitter />
                     </div>
                 </div>
             </div>
