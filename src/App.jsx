@@ -7,6 +7,9 @@ import NotFound from "./pages/NotFound";
 import "./index.css"
 import ProductsPage from "./pages/ProductsPage";
 import ProductPage from "./pages/ProductPage";
+import LoginPage from "./pages/LoginPage";
+import RegisterPage from "./pages/RegisterPage";
+import CartPage from "./pages/CartPage";
 
 const App = () => {
     return (
@@ -18,6 +21,9 @@ const App = () => {
                     <Route path="/product" element={<ProductPage />} />
                     <Route path="/contact" element={<ContactPage />} />
                     <Route path="/about" element={<AboutPage />} />
+                    <Route path="/login" element={<LoginPage />} />
+                    <Route path="/register" element={<RegisterPage />} />
+                    <Route path="/cart" element={<CartPage />} />
                     <Route path="*" element={<NotFound />} /> 
                  </Routes>
             </BrowserRouter>
